@@ -1,0 +1,10 @@
+{
+  "name": "node-ts-tut",
+  "version": "1.0.0",
+  "description": "Built following tutorial by Gergely Nemeth, which was posted on Rising Stack. (\u0016https://blog.risingstack.com/building-a-node-js-app-with-typescript-tutorial/)",
+  "scripts": {},
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.1.1"
+  }
+}
