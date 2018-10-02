@@ -2,9 +2,53 @@
   "name": "node-ts-tut",
   "version": "1.0.0",
   "description": "Built following tutorial by Gergely Nemeth, which was posted on Rising Stack. (\u0016https://blog.risingstack.com/building-a-node-js-app-with-typescript-tutorial/)",
-  "scripts": {},
+  "scripts": {
+    "tsc": "tsc",
+    "lint": "tslint 'src/**/*.ts'",
+    "test": "jest"
+  },
   "license": "MIT",
   "dependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.11.3",
+    "express": "^4.16.3",
     "typescript": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "@types/supertest": "^2.0.6",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.3",
+    "supertest": "^3.3.0",
+    "ts-jest": "^23.10.3",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-config-standard": "^8.0.1"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "jest": {
+    "clearMocks": true,
+    "coverageDirectory": "coverage",
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/__tests__/*.+(ts|js)",
+      "**/*.spec.(ts|js)"
+    ],
+    "transform": {
+      "^.+\\.(ts|ts)$": "ts-jest"
+    }
   }
 }
